@@ -5,9 +5,9 @@
 }
 
 
-.Square{
+.board{
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
   height: 300px;
@@ -16,49 +16,13 @@
 
 }
 
-.Square input{
-  width: 20px;
-}
-
-.top-left{
-  outline: greenyellow solid 2px;
-}
-
-.top-mid{
-  outline: aqua solid 2px;
-}
-
-.top-right{
-  outline: orange solid 2px;
-}
-
-
-
-
-
-.mid-left{
-  outline: orange solid 2px;
-}
-
-.mid-mid{
-  outline: greenyellow solid 2px;
-}
-
-.mid-right{
-  outline: aqua solid 2px;
-}
-
-
-
-
-.bottom-left{
-  outline: aqua solid 2px;
-}
-
-.bottom-mid{
-  outline: orange solid 2px;
-}
-
-.bottom-right{
-  outline: greenyellow solid 2px;
+.squares{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  height: 100px;
+  width: 100px;
+  font-size: 2.25rem;
+  font-weight: bolder;
 }

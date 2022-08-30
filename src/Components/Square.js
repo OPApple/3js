@@ -1,145 +1,80 @@
 import React, { Component } from 'react'
 
+var turn = true
 
+
+function clicked(event){
+  console.log(event.currentTarget)
+
+  if (turn === true){
+    event.currentTarget.innerHTML = "X"
+    turn = false
+
+  }else {
+    event.currentTarget.innerHTML = "O"
+    turn = true
+  }
+}
 
 
 export default class Square extends Component {
+
+
   render() {
     return (
-      <div className='Square'>
-
-        
-          <input maxLength={1} className='top-left'/>
-          <input maxLength={1} className='top-left'/>
-          <input maxLength={1} className='top-left'/>
-
-          <input maxLength={1} className='top-mid'/>
-          <input maxLength={1} className='top-mid'/>
-          <input maxLength={1} className='top-mid'/>
-
-          <input maxLength={1} className='top-right'/>
-          <input maxLength={1} className='top-right'/>
-          <input maxLength={1} className='top-right'/>
 
 
-          <input maxLength={1} className='top-left'/>
-          <input maxLength={1} className='top-left'/>
-          <input maxLength={1} className='top-left'/>
+
+      <div className='board'>
+
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
+        <div onClick={ (event) => {clicked(event)} } className='squares'>
+
+         
+
+        </div>
 
 
-          <input maxLength={1} className='top-mid'/>
-          <input maxLength={1} className='top-mid'/>
-          <input maxLength={1} className='top-mid'/>
 
-
-          <input maxLength={1} className='top-right'/>
-          <input maxLength={1} className='top-right'/>
-          <input maxLength={1} className='top-right'/>
-
-
-          <input maxLength={1} className='top-left'/>
-          <input maxLength={1} className='top-left'/>
-          <input maxLength={1} className='top-left'/>
-
-
-          <input maxLength={1} className='top-mid'/>
-          <input maxLength={1} className='top-mid'/>
-          <input maxLength={1} className='top-mid'/>
-          
-          
-          <input maxLength={1} className='top-right'/>
-          <input maxLength={1} className='top-right'/>
-          <input maxLength={1} className='top-right'/>
-          
-          
-          <input maxLength={1} className='mid-left'/>
-          <input maxLength={1} className='mid-left'/>
-          <input maxLength={1} className='mid-left'/>
-
-
-          <input maxLength={1} className='mid-mid'/>
-          <input maxLength={1} className='mid-mid'/>
-          <input maxLength={1} className='mid-mid'/>
-          
-          
-          <input maxLength={1} className='mid-right'/>
-          <input maxLength={1} className='mid-right'/>
-          <input maxLength={1} className='mid-right'/>
-          
-          
-          <input maxLength={1} className='mid-left'/>
-          <input maxLength={1} className='mid-left'/>
-          <input maxLength={1} className='mid-left'/>
-
-
-          <input maxLength={1} className='mid-mid'/>
-          <input maxLength={1} className='mid-mid'/>
-          <input maxLength={1} className='mid-mid'/>
-          
-          
-          <input maxLength={1} className='mid-right'/>
-          <input maxLength={1} className='mid-right'/>
-          <input maxLength={1} className='mid-right'/>
-          
-          
-          <input maxLength={1} className='mid-left'/>
-          <input maxLength={1} className='mid-left'/>
-          <input maxLength={1} className='mid-left'/>
-
-
-          <input maxLength={1} className='mid-mid'/>
-          <input maxLength={1} className='mid-mid'/>
-          <input maxLength={1} className='mid-mid'/>
-          
-          
-          <input maxLength={1} className='mid-right'/>
-          <input maxLength={1} className='mid-right'/>
-          <input maxLength={1} className='mid-right'/>
-          
-          
-          <input maxLength={1} className='bottom-left'/>
-          <input maxLength={1} className='bottom-left'/>
-          <input maxLength={1} className='bottom-left'/>
-
-
-          <input maxLength={1} className='bottom-mid'/>
-          <input maxLength={1} className='bottom-mid'/>
-          <input maxLength={1} className='bottom-mid'/>
-          
-          
-          <input maxLength={1} className='bottom-right'/>
-          <input maxLength={1} className='bottom-right'/>
-          <input maxLength={1} className='bottom-right'/>
-          
-          
-          <input maxLength={1} className='bottom-left'/>
-          <input maxLength={1} className='bottom-left'/>
-          <input maxLength={1} className='bottom-left'/>
-
-
-          <input maxLength={1} className='bottom-mid'/>
-          <input maxLength={1} className='bottom-mid'/>
-          <input maxLength={1} className='bottom-mid'/>
-          
-          
-          <input maxLength={1} className='bottom-right'/>
-          <input maxLength={1} className='bottom-right'/>
-          <input maxLength={1} className='bottom-right'/>
-          
-          
-          <input maxLength={1} className='bottom-left'/>
-          <input maxLength={1} className='bottom-left'/>
-          <input maxLength={1} className='bottom-left'/>
-
-
-          <input maxLength={1} className='bottom-mid'/>
-          <input maxLength={1} className='bottom-mid'/>
-          <input maxLength={1} className='bottom-mid'/>
-          
-          
-          <input maxLength={1} className='bottom-right'/>
-          <input maxLength={1} className='bottom-right'/>
-          <input maxLength={1} className='bottom-right'/>
 
       </div>
     )
