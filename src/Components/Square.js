@@ -2,11 +2,21 @@ import React, { Component } from 'react'
 
 var turn = true
 
+
+
 const takenSquares = []
+
+
+//
+const winCheck = () =>{
+
+}
 
 
 function clicked(event){
   console.log(takenSquares)
+
+
   
 
   for(var i = 0; i < takenSquares.length; i++){
@@ -37,6 +47,7 @@ export default class Square extends Component {
     return (
 
 
+      
 
       <div className='board'>
 
