@@ -15,7 +15,7 @@ const undo = (event) =>{
 
   if(turn === true){
 
-    trun = false
+    turn = false
 
   }
 }
