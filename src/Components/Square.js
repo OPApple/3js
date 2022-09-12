@@ -7,7 +7,7 @@ const takenSquares = []
 const history = []
 
 
-const undo = (event){
+const undo = (event) =>{
 
   var undoVar = takenSquares.pop()
   
