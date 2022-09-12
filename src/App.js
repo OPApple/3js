@@ -10,7 +10,7 @@ function App() {
 	  <div>
 
 	    
-	    <button className='' id='undo' onClick={ (event) =>{ undo(event) } }</button>
+	    <button className='' id='undo' onClick={ (event) =>{ undo(event) } }></button>
 
 	  </div>  
 	    	
