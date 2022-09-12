@@ -3,9 +3,22 @@ import React, { Component } from 'react'
 var turn = true
 
 
-
 const takenSquares = []
+const history = []
 
+
+const undo = (event){
+
+  var undoVar = takenSquares.pop()
+  
+  undoVar.innerHTML = ''
+
+  if(turn === true){
+
+    trun = false
+
+  }
+}
 
 //
 const winCheck = () =>{
